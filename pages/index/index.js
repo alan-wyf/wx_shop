@@ -3,7 +3,7 @@ import { request } from "../../request/index.js";
 Page({
   data: {
     // 轮播图数组
-    swiperList: [],
+    swiperList: ["https://s3.ax1x.com/2020/12/03/Do0p4O.jpg", "https://s3.ax1x.com/2020/12/03/Do0CCD.jpg", "https://s3.ax1x.com/2020/12/03/Do0SUK.jpg", "https://s3.ax1x.com/2020/12/03/Do0P8e.jpg"],
     // 导航 数组
     catesList:[],
     // 楼层数据
@@ -21,21 +21,20 @@ Page({
     //   }
     // });
     
-    this.getSwiperList();
+    // this.getSwiperList();
     this.getCateList();
     this.getFloorList();
       
   },
 
   // 获取轮播图数据
-  getSwiperList(){
-    request({ url: "/home/swiperdata" })
-    .then(result => {
-      this.setData({
-        swiperList: result
-      })
-    })
-  },
+ // getSwiperList() {
+  //   request({ url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata" }).then(res => {
+  //     this.setData({
+  //       swiperList:res.data.message
+  //     })
+  //   })
+  // },
   // 获取 分类导航数据
   getCateList(){
     request({ url: "/home/catitems" })
