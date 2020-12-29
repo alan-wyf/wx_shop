@@ -1,6 +1,7 @@
-# wx_shop   
+# wx_shop  
+##微信小程序接口配置
 
-## Node环境下   
+### Node环境下   
 
 `npm install -g json-server`   
 
